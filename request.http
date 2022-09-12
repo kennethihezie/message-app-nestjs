@@ -1,0 +1,14 @@
+### getAllMessges
+GET http://localhost:3000/messages
+
+### createMessage
+POST http://localhost:3000/messages
+Content-Type: application/json
+
+{
+    "message":"hi there",
+    "messageUrl": "www.img.com"
+}
+
+### getMessage
+GET http://localhost:3000/messages/1
