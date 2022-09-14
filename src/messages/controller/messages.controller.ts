@@ -8,19 +8,17 @@ export class MessagesController {
     constructor(private messageService: MessagesService){}
 
     @Get()
-    getMessages(): Message[] {
+    getMessages(){
        return this.messageService.getMessages()
     }
 
     @Post()
-    createMessage(@Body() message: MessageDto): Message {
+    createMessage(@Body() message: MessageDto) {
       return this.messageService.createMessage(message)
     }
 
     @Get('/:id')
-    getMessage(@Param() id: string): Message {
-      console.log(id);
-      
+    getMessage(@Param('id') id: string) { 
        return this.messageService.getMessage(id)
     }
 }

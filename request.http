@@ -6,9 +6,9 @@ POST http://localhost:3000/messages
 Content-Type: application/json
 
 {
-    "message":"hi there",
+    "message":"hi collins",
     "messageUrl": "www.img.com"
 }
 
 ### getMessage
-GET http://localhost:3000/messages/1
+GET http://localhost:3000/messages/83
