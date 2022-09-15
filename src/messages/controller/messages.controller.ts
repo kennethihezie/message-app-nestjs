@@ -22,3 +22,5 @@ export class MessagesController {
        return this.messageService.getMessage(id)
     }
 }
+
+//All endpoints is working.
